@@ -1,0 +1,165 @@
+/* Auth Container Styles */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../images/auth-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -60px; /* Compensate for fixed navbar */
+}
+
+.auth-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.auth-card h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Form Styles */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Password Input Styles */
+.password-input {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+}
+
+/* Terms Checkbox Styles */
+.terms {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.terms label {
+    font-size: 0.9rem;
+}
+
+.terms a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.auth-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Auth Footer Styles */
+.auth-footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #666;
+}
+
+.auth-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styles */
+.error-message {
+    color: #d32f2f;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* Success Message Styles */
+.success-message {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-container {
+        padding: 1rem;
+    }
+
+    .auth-card {
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 0.7rem;
+    }
+} 
