@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - AgriSwap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>AgriSwap</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Products Header -->
+    <header class="products-header">
+        <h1>Agricultural Products</h1>
+        <div class="search-filter">
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filters">
+                <select>
+                    <option value="">All Categories</option>
+                    <option value="seeds">Seeds</option>
+                    <option value="fertilizers">Fertilizers</option>
+                    <option value="pesticides">Pesticides</option>
+                    <option value="tools">Tools</option>
+                </select>
+                <select>
+                    <option value="">Sort By</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="newest">Newest First</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Grid -->
+    <section class="products-grid">
+        <!-- Product Card -->
+        <div class="product-card">
+                        <img src="wheat seed.jpg" alt="Wheat Seeds">            <div class="product-info">                <h3>Premium Wheat Seeds</h3>                <p class="price">₹2,500/bag</p>                <p class="location"><i class="fas fa-map-marker-alt"></i> Punjab</p>                <p class="description">High-yield wheat seeds suitable for Rabi season.</p>                <button class="contact-seller">Contact Seller</button>            </div>        </div>        <div class="product-card">            <img src="rice seed.webp" alt="Rice Seeds">            <div class="product-info">                <h3>Organic Rice Seeds</h3>                <p class="price">₹3,000/bag</p>                <p class="location"><i class="fas fa-map-marker-alt"></i> West Bengal</p>                <p class="description">Certified organic rice seeds for better yield.</p>                <button class="contact-seller">Contact Seller</button>            </div>        </div>        <div class="product-card">            <img src="organic firti.jpg" alt="Organic Fertilizer">            <div class="product-info">                <h3>Organic Fertilizer</h3>                <p class="price">₹1,200/bag</p>                <p class="location"><i class="fas fa-map-marker-alt"></i> Maharashtra</p>                <p class="description">100% natural organic fertilizer for all crops.</p>                <button class="contact-seller">Contact Seller</button>            </div>        </div>        <div class="product-card">            <img src="bio pesti.jpg" alt="Bio Pesticide">            <div class="product-info">                <h3>Bio Pesticide</h3>                <p class="price">₹800/bottle</p>                <p class="location"><i class="fas fa-map-marker-alt"></i> Gujarat</p>                <p class="description">Eco-friendly pest control solution.</p>                <button class="contact-seller">Contact Seller</button>            </div>
+        </div>
+    </section>
+
+    <!-- Add Product Button -->
+    <div class="add-product">
+        <button class="add-product-btn">
+            <i class="fas fa-plus"></i> List Your Product
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@agriswap.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AgriSwap. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
